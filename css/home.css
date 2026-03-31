@@ -1,0 +1,230 @@
+@import "global.css";
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: var(--background);
+    background-image: url("../images/sigma.png");
+    margin: 0px;
+    color: var(--text);
+    padding: 0;
+    text-shadow: 1px 1px 1px var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main {
+    background-image: url("../images/paper.png");
+    box-shadow: 10px 10px 10px var(--adjacent2);
+    border: 4px dashed var(--adjacent1);
+    width: 300px;
+    height: 350px;  
+    background-color: var(--main);
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-left: 4px;
+    position: relative;
+  }
+
+  #spacer {
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  
+  .divider {
+    border-bottom: 2px dashed var(--adjacent1);
+    margin: 5px;
+    padding-right: 30px;
+    color: var(--adjacent1);
+  }
+  
+
+  h2 {
+    color: var(--text);
+  }
+
+  #icon {
+    border: 3px solid var(--adjacent1);
+  }
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--adjacent1);
+  }
+
+  a:visited {
+    color: var(--adjacent1);
+  }
+
+  a:hover {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  a:active {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--adjacent2);
+  }
+    #bg {
+    position: fixed;
+    bottom: -20px;
+    right: -95px;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  body {
+    background-color: var(--background);
+    background-image: url("../images/sigma.png");
+    margin: 0px;
+    color: var(--text);
+    padding: 0;
+    zoom: 50%;
+    text-shadow: 2px 2px 2px var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main {
+    background-image: url("../images/paper.png");
+    box-shadow: 10px 10px 10px var(--adjacent2);
+    border: 4px dashed var(--adjacent1);
+    width: 300px;
+    height: 500px;
+    background-color: var(--main);
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-left: 4px;
+    position: relative;
+  }
+
+  #spacer {
+    text-align: center;
+    padding-top: 16%;
+  }
+  
+    
+  .divider {
+    border-bottom: 2px dashed var(--adjacent1);
+    margin: 5px;
+    padding-right: 30px;
+    color: var(--adjacent1);
+  }
+
+  h2 {
+    color: var(--text);
+  }
+
+  #icon {
+    border: 3px solid var(--adjacent1);
+  }
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 5px 0;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--adjacent1);
+  }
+
+  a:visited {
+    color: var(--adjacent1);
+  }
+
+  a:hover {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  a:active {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--adjacent2);
+  }
+    #bg {
+    position: fixed;
+    bottom: -20px;
+    right: -95px;
+    opacity: 0.9;
+  }
+}
+
+/*
+     FILE ARCHIVED ON 10:32:20 Nov 24, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:56:00 Aug 27, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.468
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.009
+  cdx.remote: 5.777
+  LoadShardBlock: 747.689 (3)
+  PetaboxLoader3.datanode: 490.698 (4)
+  load_resource: 144.997
+  PetaboxLoader3.resolve: 88.203
+*/
