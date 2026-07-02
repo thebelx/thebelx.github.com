@@ -1,46 +1,257 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>0d01</title>
+  <meta name="title" content="0d01  | Cybersecurity and Software Development Student">
+  <meta name="description" content="0d01  - Cybersecurity and software development student focused on Linux, systems programming, networking, and open-source development.">
+  <meta name="author" content="0d01 ">
+  <meta name="keywords" content="0d01, bell, portfolio, cybersecurity, systems programming, networking, linux, open source, student">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
 
-    
-    <title>elizabeth • 0d01.wtf</title>
-    <meta name="title" content="the one who resides over power">
-    <meta name="description" content="the one who resides over power">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="elizabeth • 0d01.wtf">
-    <meta property="og:description" content="the one who resides over power">
-    <meta property="og:image" content="images/profile.jpg">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://0d01.wtf">
-    <meta property="twitter:title" content="elizabeth • aura">
-    <meta property="twitter:description" content="power, mystery, ethereal presence">
-    <meta property="twitter:image" content="/metadata/metanew.jpg">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://0d01.wtf/">
+  <meta property="og:title" content="0d01  | Cybersecurity and Software Development Student">
+  <meta property="og:description" content="Static portfolio for 0d01 : cybersecurity, systems programming, and open-source work.">
+  <meta property="og:image" content="images/favicon.svg">
 
-  
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://0d01.wtf/">
+  <meta property="twitter:title" content="0d01  | Cybersecurity and Software Development Student">
+  <meta property="twitter:description" content="Static portfolio for 0d01 : cybersecurity, systems programming, and open-source work.">
+  <meta property="twitter:image" content="images/favicon.svg">
 
-  </head>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://0d01.wtf/">
 
-  <body>
-  
-    <div id="all">
-      <div id="main">
-        
-          <div id="spacer">
-            <img src="images/profile.jpg" id="icon" style="height:104px">
-            <h2>
-              elizabeth
-              <span style="font-size:15px; display:block; position:absolute; text-align:center; left:0; right:0; font-weight:normal; opacity:0.8">liz</span>
-            </h2>
-            <p><br>the one who resides over power</p>
-          </div>
-          
-      </div>
-    </div>
-  
-  <div id="bg">
-    <img src="images/card.gif" width="300px">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      /* Light mode default */
+      color: #171717;
+      /* Light mode default */
+    }
+
+    .dark body {
+      background-color: #0a0a0a;
+      color: #e5e5e5;
+    }
+
+    /* Custom scrollbar for webkit */
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d4d4d4;
+      border-radius: 4px;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #262626;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a3a3a3;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #404040;
+    }
+
+    .marquee-container {
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+  </style>
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+  <div class="absolute top-0 left-0 w-full h-[100vh] overflow-hidden -z-10 pointer-events-none">
+    <div class="absolute inset-0 w-full h-[120%] bg-[url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2664&auto=format&fit=crop')] bg-cover bg-center opacity-10 transition-opacity duration-300" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-gray-50/60 to-gray-50 transition-colors duration-300"></div>
   </div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 px-4">
+    <nav aria-label="Main Navigation" class="bg-white/80 backdrop-blur-md border border-neutral-200 rounded-full px-6 py-3 flex items-center gap-6 shadow-xl transition-colors duration-300">
+      <a href="#home" class="text-sm font-semibold text-neutral-900">Home</a>
+      <a href="#work" class="text-sm text-neutral-600 hover:text-black transition-colors">Work</a>
+      <a href="#about" class="text-sm text-neutral-600 hover:text-black transition-colors">About</a>
+      <a href="#contact" class="text-sm text-neutral-600 hover:text-black transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <main class="relative px-4 sm:px-8 lg:px-16 pt-36 pb-20 max-w-6xl mx-auto">
+    <section id="home" class="animate-fade-in-up">
+      <p class="inline-flex items-center rounded-full border border-neutral-300 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-[0.14em] text-neutral-700">
+        Portfolio
+      </p>
+      <p class="inline-flex items-center rounded-full border border-neutral-300 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-[0.14em] text-neutral-700">
+        Cybersecurity Student
+      </p>
+      <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-neutral-900 leading-tight max-w-4xl">
+        Student building the future of securities.
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-neutral-700 max-w-3xl leading-relaxed">
+        Motivated student pursuing an Associate of Applied Science in Cybersecurity at Northern Virginia Community College. Focused on Linux, systems programming, networking, and open-source software development through self-directed projects.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3 text-sm text-neutral-700">
+        <span class="rounded-full border border-neutral-300 bg-white/80 px-4 py-2">Linux</span>
+        <span class="rounded-full border border-neutral-300 bg-white/80 px-4 py-2">Low level Programming</span>
+        <span class="rounded-full border border-neutral-300 bg-white/80 px-4 py-2">Networking</span>
+        <span class="rounded-full border border-neutral-300 bg-white/80 px-4 py-2">Open Source Development</span>
+      </div>
+    </section>
+
+    <section id="work" class="mt-24">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-neutral-900">Previous Experience:</h2>
+        <p class="text-sm text-neutral-600">Founder and systems-focused developer</p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 backdrop-blur-sm p-6 shadow-sm hover:shadow-md transition-shadow">
+          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-neutral-500">Arqa-Core</p>
+          <h3 class="mt-3 text-xl font-semibold text-neutral-900">Founder</h3>
+          <p class="mt-4 text-neutral-700 leading-relaxed">
+            Demonstrated notable project management by developing a unified home-entertainment oriented system and launcher.
+          </p>
+          <p class="mt-4 text-sm text-neutral-500">Ongoing project leadership and architecture direction.</p>
+        </article>
+
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 backdrop-blur-sm p-6 shadow-sm hover:shadow-md transition-shadow">
+          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-neutral-500">SlayerOS</p>
+          <h3 class="mt-3 text-xl font-semibold text-neutral-900">Developer</h3>
+          <p class="mt-4 text-neutral-700 leading-relaxed">
+            Built a lightweight microkernel for x86/64 processors, demonstrating strong project execution and low-level systems knowledge.
+          </p>
+          <p class="mt-4 text-sm text-neutral-500">Microkernel development with systems-level design focus.</p>
+        </article>
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 backdrop-blur-sm p-6 shadow-sm hover:shadow-md transition-shadow">
+          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-neutral-500">Raptorbytes</p>
+          <h3 class="mt-3 text-xl font-semibold text-neutral-900">Chief Staffing Officer</h3>
+          <p class="mt-4 text-neutral-700 leading-relaxed">
+            Oversaw staffing operations and coordinated team management to ensure efficient project execution and efficient resource allocation.
+          </p>
+          <p class="mt-4 text-sm text-neutral-500">Staffing operations and team management oversight.</p>
+        </article>
+
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 backdrop-blur-sm p-6 shadow-sm hover:shadow-md transition-shadow">
+          <p class="text-xs font-semibold uppercase tracking-[0.12em] text-neutral-500">Tartarus/Aiyastabus</p>
+          <h3 class="mt-3 text-xl font-semibold text-neutral-900">Community Manager</h3>
+          <p class="mt-4 text-neutral-700 leading-relaxed">
+            Managed and engaged with the community to foster growth, support, and collaboration among members.
+          </p>
+          <p class="mt-4 text-sm text-neutral-500">Community engagement and management responsibilities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="mt-24 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <article class="lg:col-span-2 rounded-3xl border border-neutral-200 bg-white/85 p-6 sm:p-8 shadow-sm">
+        <h2 class="text-2xl font-semibold text-neutral-900">Education</h2>
+        <div class="mt-6 space-y-6">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.1em] text-neutral-500">Northern Virginia Community College</p>
+            <p class="mt-2 text-lg font-medium text-neutral-900">Associate of Applied Science in Cybersecurity</p>
+            <p class="mt-1 text-sm text-neutral-600">August 2026 - June 2029</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.1em] text-neutral-500">Independence Nontraditional</p>
+            <p class="mt-2 text-lg font-medium text-neutral-900">General Studies</p>
+            <p class="mt-1 text-sm text-neutral-600">2024 - June 2027</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="rounded-3xl border border-neutral-200 bg-white/85 p-6 sm:p-8 shadow-sm">
+        <h2 class="text-2xl font-semibold text-neutral-900">Qualifications</h2>
+        <ul class="mt-6 space-y-3 text-neutral-700">
+          <li>C/++</li>
+          <li>HTML/CSS/JS</li>
+          <li>Linux</li>
+          <li>Project Management</li>
+          <li>A motivated attitude</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mt-24">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-neutral-900">Achievements</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-neutral-900">Principal's Honor Roll</h3>
+          <p class="mt-3 text-neutral-700">Maintained a 3.8 GPA (unweighted) through majority of high school.</p>
+        </article>
+        <article class="rounded-3xl border border-neutral-200 bg-white/85 p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-neutral-900">Cares Award</h3>
+          <p class="mt-3 text-neutral-700">Recognized for exceptional humanities and interpersonal relationships throughout high school Career.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-24 rounded-3xl border border-neutral-200 bg-white/85 p-8 shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-neutral-900">Contact</h2>
+      <p class="mt-4 text-neutral-700 max-w-2xl">
+        Available for cybersecurity related internships & learning opportunities.
+      </p>
+      <div class="mt-6 space-y-2 text-sm text-neutral-600">
+        <p>Alias: <span class="font-medium text-neutral-800">0d01 / bell</span></p>
+        <p>Based in: <span class="font-medium text-neutral-800">Washington, DC</span></p>
+        <p>Email: <a href="mailto:692kn7c1@0d01.anonaddy.com" class="font-medium text-neutral-800 hover:text-black underline underline-offset-2">692kn7c1@0d01.anonaddy.com</a></p>
+        <p>GitHub: <a href="https://github.com/thebelx" target="_blank" rel="noopener noreferrer" class="font-medium text-neutral-800 hover:text-black underline underline-offset-2">@thebelx</a></p>
+        <p>Discord: <span class="font-medium text-neutral-800">0d01.wtf</span></p>
+      </div>
+    </section>
+  </main>
+
+
 </body></html>
